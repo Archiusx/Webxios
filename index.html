@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebX IoT - Smart Tech Hub</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 70px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .quote-box {
+      margin: 30px auto;
+      padding: 15px 20px;
+      max-width: 600px;
+      font-style: italic;
+      font-size: 1.05rem;
+      background: rgba(255, 255, 255, 0.08);
+      border-left: 4px solid #00cec9;
+      border-radius: 8px;
+    }
+
+    .offers {
+      background: #ff4757;
+      padding: 12px;
+      margin: 15px auto;
+      max-width: 700px;
+      border-radius: 6px;
+      font-size: 1.05rem;
+      animation: blink 1.2s infinite alternate;
+    }
+
+    @keyframes blink {
+      from { background-color: #ff4757; }
+      to { background-color: #ff6b81; }
+    }
+
+    .shop-button {
+      margin: 30px auto 50px;
+      padding: 14px 28px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      background: #2ecc71;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .shop-button:hover {
+      background: #27ae60;
+    }
+
+    .product-section {
+      background: #1e1e1e;
+      padding: 40px 20px;
+    }
+
+    .product-section h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product-card {
+      background: #fff;
+      color: #333;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.15rem;
+    }
+
+    .product-card p {
+      margin: 5px 0;
+      font-weight: bold;
+      color: #2ecc71;
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌐 WebX IoT</h1>
+  <p>Smart Gadgets | Seamless Living | Incredible Deals</p>
+</header>
+
+<div class="quote-box" id="quoteBox">
+  “Technology is best when it brings people together.” – Matt Mullenweg
+</div>
+
+<div class="offers">
+  🎉 Bumper Sale: Flat 25% OFF with Code <strong>SAVE25</strong> – Limited Time Only!
+</div>
+<div class="offers">
+  🔥 Hot Offer: Buy 1 Smart Watch & Get 50% OFF on Wireless Earbuds!
+</div>
+
+<button class="shop-button" onclick="goToCart()">🛍️ Explore Products</button>
+
+<section class="product-section">
+  <h2>🛍️ Featured Products</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://www.teckpot.com/cdn/shop/files/fb523rgrd-frcjk_2_jpg_994x994.jpg?v=1747397782" alt="Smart Watch" onclick="goToCart()">
+      <h3>Smart Watch</h3>
+      <p>₹2499</p>
+    </div>
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71rkWWvvNKL._AC_SX444_SY639_FMwebp_QL65_.jpg" alt="Wireless Earbuds" onclick="goToCart()">
+      <h3>Wireless Earbuds</h3>
+      <p>₹1799</p>
+    </div>
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/G/31/img24hp/home/audio/revamp/1_Nav_Tiles_400x400._CB556422013_.jpg" alt="Smart Speaker" onclick="goToCart()">
+      <h3>Smart Speaker</h3>
+      <p>₹3499</p>
+    </div>
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61BffdOf7vL._AC_SX444_SY639_FMwebp_QL65_.jpg" alt="Fitness Band" onclick="goToCart()">
+      <h3>Fitness Band</h3>
+      <p>₹1199</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 WebX IoT. Smart Tech, Smarter Shopping.</p>
+</footer>
+
+<script>
+  const quotes = [
+    "“Technology is best when it brings people together.” – Matt Mullenweg",
+    "“The science of today is the technology of tomorrow.” – Edward Teller",
+    "“It’s not a faith in technology. It’s faith in people.” – Steve Jobs",
+    "“IoT is not a concept; it is a network, the true technology revolution.”",
+    "“Your gadget’s IQ is rising. Are you ready?” – WebX Team"
+  ];
+
+  function showRandomQuote() {
+    const quoteBox = document.getElementById("quoteBox");
+    const random = quotes[Math.floor(Math.random() * quotes.length)];
+    quoteBox.innerText = random;
+  }
+
+  setInterval(showRandomQuote, 5000);
+
+  function goToCart() {
+    // Replace this with the actual new cart link when ready
+    window.location.href = "YOUR_NEW_CART_LINK_HERE";
+  }
+</script>
+
+</body>
+</html>
