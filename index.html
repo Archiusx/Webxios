@@ -133,6 +133,16 @@
       color: #bbb;
       margin-top: 40px;
     }
+
+    footer a {
+      color: #00cec9;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -183,6 +193,11 @@
 
 <footer>
   <p>&copy; 2025 WebX IoT. Smart Tech, Smarter Shopping.</p>
+  <p>
+    <a href="https://cartxo.netlify.app/">🛒 Cart</a> |
+    <a href="https://feedbacko.netlify.app/">💬 Feedback</a> |
+    <a href="https://aboutx.netlify.app/">ℹ️ About</a>
+  </p>
 </footer>
 
 <script>
@@ -203,8 +218,7 @@
   setInterval(showRandomQuote, 5000);
 
   function goToCart() {
-    // Replace this with the actual new cart link when ready
-    window.location.href = "YOUR_NEW_CART_LINK_HERE";
+    window.location.href = "https://cartxo.netlify.app/";
   }
 </script>
 
