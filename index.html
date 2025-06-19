@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>WebX IoT - Smart Tech Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     * {
       box-sizing: border-box;
@@ -11,78 +12,99 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #fff;
-      text-align: center;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     header {
-      background: rgba(0, 0, 0, 0.9);
-      padding: 70px 20px 30px;
+      background: linear-gradient(to right, #00b894, #00cec9);
+      color: white;
+      padding: 60px 20px 30px;
+      text-align: center;
     }
 
     header h1 {
       font-size: 3rem;
       margin: 0;
-      letter-spacing: 1px;
     }
 
     header p {
       font-size: 1.2rem;
       margin-top: 10px;
-      color: #ccc;
+    }
+
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: #00b894;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .quote-box {
       margin: 30px auto;
       padding: 15px 20px;
-      max-width: 600px;
+      max-width: 700px;
       font-style: italic;
-      font-size: 1.05rem;
-      background: rgba(255, 255, 255, 0.08);
-      border-left: 4px solid #00cec9;
+      font-size: 1rem;
+      background: #e0f7fa;
+      border-left: 4px solid #00b894;
       border-radius: 8px;
     }
 
     .offers {
-      background: #ff4757;
+      background: #ff6b6b;
+      color: white;
       padding: 12px;
-      margin: 15px auto;
-      max-width: 700px;
+      margin: 20px auto;
+      max-width: 800px;
       border-radius: 6px;
-      font-size: 1.05rem;
-      animation: blink 1.2s infinite alternate;
+      font-size: 1rem;
+      animation: blink 1.5s infinite alternate;
     }
 
     @keyframes blink {
-      from { background-color: #ff4757; }
-      to { background-color: #ff6b81; }
+      from { background-color: #ff6b6b; }
+      to { background-color: #ff4757; }
     }
 
     .shop-button {
-      margin: 30px auto 50px;
+      display: block;
+      margin: 25px auto 40px;
       padding: 14px 28px;
       font-size: 1.1rem;
       border: none;
       border-radius: 6px;
       color: white;
-      background: #2ecc71;
+      background: #0984e3;
       cursor: pointer;
       transition: background 0.3s ease;
     }
 
     .shop-button:hover {
-      background: #27ae60;
+      background: #075ca8;
     }
 
     .product-section {
-      background: #1e1e1e;
-      padding: 40px 20px;
+      background: #f2f2f2;
+      padding: 50px 20px;
+      text-align: center;
     }
 
     .product-section h2 {
       font-size: 2rem;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     .product-grid {
@@ -94,11 +116,10 @@
     }
 
     .product-card {
-      background: #fff;
-      color: #333;
+      background: white;
       padding: 15px;
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.2s ease;
     }
 
@@ -108,7 +129,7 @@
 
     .product-card img {
       width: 100%;
-      height: 150px;
+      height: 160px;
       object-fit: cover;
       border-radius: 8px;
       margin-bottom: 10px;
@@ -116,28 +137,26 @@
     }
 
     .product-card h3 {
+      font-size: 1.1rem;
       margin: 10px 0 5px;
-      font-size: 1.15rem;
     }
 
     .product-card p {
-      margin: 5px 0;
       font-weight: bold;
-      color: #2ecc71;
+      color: #00b894;
     }
 
     footer {
-      background: #111;
+      background: #333;
       padding: 20px;
-      font-size: 0.9rem;
-      color: #bbb;
-      margin-top: 40px;
+      text-align: center;
+      color: #ccc;
     }
 
     footer a {
       color: #00cec9;
+      margin: 0 10px;
       text-decoration: none;
-      margin: 0 8px;
     }
 
     footer a:hover {
@@ -149,24 +168,30 @@
 
 <header>
   <h1>🌐 WebX IoT</h1>
-  <p>Smart Gadgets | Seamless Living | Incredible Deals</p>
+  <p>Empowering Smart Living Through Innovative Technology</p>
 </header>
+
+<nav>
+  <a href="https://cartxo.netlify.app/">🛒 Cart</a>
+  <a href="https://feedbacko.netlify.app/">💬 Feedback</a>
+  <a href="https://aboutx.netlify.app/">ℹ️ About Us</a>
+</nav>
 
 <div class="quote-box" id="quoteBox">
   “Technology is best when it brings people together.” – Matt Mullenweg
 </div>
 
 <div class="offers">
-  🎉 Bumper Sale: Flat 25% OFF with Code <strong>SAVE25</strong> – Limited Time Only!
+  🎉 Bumper Sale: Use Code <strong>SAVE25</strong> for 25% OFF – Hurry!
 </div>
 <div class="offers">
-  🔥 Hot Offer: Buy 1 Smart Watch & Get 50% OFF on Wireless Earbuds!
+  🔥 Buy 1 Smart Watch & Get 50% OFF on Wireless Earbuds – Today Only!
 </div>
 
-<button class="shop-button" onclick="goToCart()">🛍️ Explore Products</button>
+<button class="shop-button" onclick="goToCart()">🛍️ Explore All Products</button>
 
 <section class="product-section">
-  <h2>🛍️ Featured Products</h2>
+  <h2>Featured Products</h2>
   <div class="product-grid">
     <div class="product-card">
       <img src="https://www.teckpot.com/cdn/shop/files/fb523rgrd-frcjk_2_jpg_994x994.jpg?v=1747397782" alt="Smart Watch" onclick="goToCart()">
@@ -192,11 +217,11 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 WebX IoT. Smart Tech, Smarter Shopping.</p>
+  <p>&copy; 2025 WebX IoT. All Rights Reserved.</p>
   <p>
-    <a href="https://cartxo.netlify.app/">🛒 Cart</a> |
-    <a href="https://feedbacko.netlify.app/">💬 Feedback</a> |
-    <a href="https://aboutx.netlify.app/">ℹ️ About</a>
+    <a href="https://cartxo.netlify.app/">Cart</a> |
+    <a href="https://feedbacko.netlify.app/">Feedback</a> |
+    <a href="https://aboutx.netlify.app/">About Us</a>
   </p>
 </footer>
 
